@@ -1,0 +1,57 @@
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+    .cabecalho {
+        font-size: 1.2em;
+        margin: auto 5%;
+    }
+    .slide {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .retangulo {
+        width: 100%;
+    }
+    .retangulo .descricao-da-obra {
+        margin-top: 5%;
+    }
+    .circulo h4 {
+        font-size: 2em;
+    }
+    .foto {
+        width: 80%;
+    }
+    .foto img {
+        position: relative;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    body {
+        font-size: 2em;
+    }
+    .cabecalho {
+        margin: auto 5%;
+    }
+    .slide {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .retangulo {
+        width: 100%;
+    }
+    .retangulo .descricao-da-obra {
+        margin-top: 5%;
+    }
+    .circulo h4 {
+        font-size: 1.8em;
+    }
+    .foto {
+        width: 80%;
+    }
+    .foto img, .foto source {
+        position: relative;
+    }
+}

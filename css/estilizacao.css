@@ -1,0 +1,139 @@
+@charset 'UTF-8';
+
+/* A mente do site */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    background-image: url(../imagens/fundo\ branco.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+/* O corpo do site */
+
+.cabecalho {
+    font-size: 1.2em;
+    margin-top: -1%;
+    margin-bottom: -1%;
+    color: #F9627D;
+}
+
+/* O conteúdo do site */
+
+.conteudo {
+    position: relative;
+}
+.slide {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    gap: 2%;
+    color: white;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+} 
+@keyframes fade {
+    from {opacity: 0.2}
+    to {opacity: 1}
+}
+.retangulo {
+    width: 180%;
+    height: 100%;
+    background-color: #406E8E;
+    border-radius: 2em;
+}
+.retangulo .titulo-da-obra {
+    margin: 0% auto 3%;
+    padding: 3%;
+    font-size: 2em;
+    background-color: #23395b;
+    border-radius: 1em 1em 0 0;
+}
+.retangulo .descricao-da-obra {
+    text-align: justify;
+    margin: auto 3%;
+    font-weight: normal;
+}
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    margin: 10% auto 8%;
+}
+.circulo {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #23395B;
+    width: max-content;
+    height: max-content;
+    border-radius: 2em;
+    transition-duration: .2s;
+    position: relative;
+    padding: 2%;
+    margin: 0;
+    cursor: pointer;
+}
+.circulo h4 {
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+}
+.circulo:hover {
+    background-color: #161925;
+    color: white;
+    transition-duration: .4s;
+}
+.circulo:active {
+    background-color: #23395b;
+    color: #DBDBDB;
+    transition-duration: .2s;
+}
+.foto {
+    background-color: #DBDBDB;
+    border-radius: 2em;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.foto img, .foto source {
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+}
+
+/* O rodapé do site */
+
+.rodape {
+    background-color: #f9627d;
+    color: white;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+.rodape a {
+    color: #161925;
+    text-decoration: none;
+    transition-duration: .6s;
+}
+.rodape a:hover {
+    color: #23395b;
+    transition-duration: .5s;
+}
+.rodape a:active {
+    color: #406e8e;
+    transition-duration: .2s;
+}
