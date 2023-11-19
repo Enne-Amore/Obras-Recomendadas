@@ -19,7 +19,7 @@
     .retangulo .descricao-da-obra {
         margin-top: 5%;
     }
-    .circulo h4 {
+    .circulo {
         font-size: 2em;
     }
     .foto {
@@ -47,7 +47,7 @@
     .retangulo .descricao-da-obra {
         margin-top: 5%;
     }
-    .circulo h4 {
+    .circulo {
         font-size: 1.8em;
     }
     .foto {
