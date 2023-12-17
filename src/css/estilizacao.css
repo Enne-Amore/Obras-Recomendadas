@@ -20,6 +20,7 @@ body {
 
 .cabecalho {
     font-size: 1.2em;
+    text-transform: capitalize;
     background-color: #ffffff9a;
     color: #F9627D;
     width: max-content;
