@@ -2,6 +2,11 @@
 
 /* A mente do site */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font: 2vw Arial, Helvetica, sans-serif;
     text-align: center;
@@ -11,9 +16,12 @@ body {
     background-size: cover;
     margin: 0;
 }
-* {
-    margin: 0;
-    padding: 0;
+:root {
+    --cinza: #dbdbdb;
+    --azul-escura: #161925;
+    --azul-neutra: #23395B;
+    --azul-clara: #406E8E;
+    --vermelha: #F9627D;
 }
 
 /* O corpo do site */
@@ -22,7 +30,7 @@ body {
     font-size: 1.2em;
     text-transform: capitalize;
     background-color: #ffffff9a;
-    color: #F9627D;
+    color: var(--vermelha);
     width: max-content;
     margin: auto;
     margin-top: 2%;
@@ -36,12 +44,15 @@ body {
     position: relative;
 }
 .slide {
-    display: flex;
+    display: none;
     flex-direction: row;
     margin: 0 5%;
     margin-top: 4%;
     gap: 2%;
     color: white;
+}
+.slide.aparecida {
+    display: flex;
 }
 .fade {
     animation-name: fade;
@@ -54,14 +65,14 @@ body {
 .retangulo {
     width: 180%;
     height: 100%;
-    background-color: #406E8E;
+    background-color: var(--azul-clara);
     border-radius: 2em;
 }
 .retangulo .titulo-da-obra {
     margin: 0% auto 3%;
     padding: 3%;
     font-size: 2em;
-    background-color: #23395b;
+    background-color: var(--azul-neutra);
     border-radius: 1em 1em 0 0;
 }
 .retangulo .descricao-da-obra {
@@ -82,7 +93,7 @@ body {
     display: flex;
     align-items: center;
     background-color: white;
-    color: #23395B;
+    color: var(--azul-neutra);
     width: max-content;
     height: max-content;
     font-size: 1em;
@@ -98,17 +109,17 @@ body {
 }
 .circulo:hover,
 .circulo:focus-visible {
-    background-color: #161925;
+    background-color: var(--azul-escura);
     color: white;
     transition-duration: .4s;
 }
 .circulo:active {
-    background-color: #23395b;
-    color: #DBDBDB;
+    background-color: var(--azul-neutra);
+    color: var(--cinza);
     transition-duration: .2s;
 }
 .foto {
-    background-color: #DBDBDB;
+    background-color: var(--cinza);
     border-radius: 2em;
     width: 100%;
     height: auto;
@@ -142,30 +153,39 @@ body {
     border: 0;
     width: 4em;
     height: 4em;
-    transition: background-color 0.6s ease;
     cursor: pointer;
+    transition: .4s ease;
+}
+.indicacoes .bolinha:not(.selecionada):hover {
+    background-color: var(--azul-clara);
+}
+.indicacoes .bolinha.selecionada {
+    background-color: var(--azul-neutra);
+}
+.indicacoes .bolinha:focus-visible {
+    outline: auto;
 }
 
 /* O rodapé do site */
 
 .rodape {
-    background-color: #f9627d;
+    background-color: var(--vermelha);
     color: white;
     padding: 1em;
     font-size: 1.2em;
 }
 .rodape a {
-    color: #161925;
+    color: var(--azul-escura);
     text-decoration: none;
     font-weight: bold;
     transition-duration: .6s;
 }
 .rodape a:hover,
 .rodape a:focus-visible {
-    color: #23395b;
+    color: var(--azul-neutra);
     transition-duration: .5s;
 }
 .rodape a:active {
-    color: #406e8e;
+    color: var(--azul-clara);
     transition-duration: .2s;
 }
