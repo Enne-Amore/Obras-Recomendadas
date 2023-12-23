@@ -29,8 +29,10 @@ body {
 .cabecalho {
     font-size: 1.2em;
     text-transform: capitalize;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.083);
     background-color: #ffffff9a;
     color: var(--vermelha);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.083);
     width: max-content;
     margin: auto;
     margin-top: 2%;
@@ -66,6 +68,7 @@ body {
     width: 180%;
     height: 100%;
     background-color: var(--azul-clara);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.178);
     border-radius: 2em;
 }
 .retangulo .titulo-da-obra {
@@ -73,6 +76,7 @@ body {
     padding: 3%;
     font-size: 2em;
     background-color: var(--azul-neutra);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.219);
     border-radius: 1em 1em 0 0;
 }
 .retangulo .descricao-da-obra {
@@ -120,6 +124,7 @@ body {
 }
 .foto {
     background-color: var(--cinza);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.178);
     border-radius: 2em;
     width: 100%;
     height: auto;
@@ -148,7 +153,8 @@ body {
     margin: 2% 0 3%;
 }
 .indicacoes .bolinha {
-    background-color: rgba(0, 0, 0, 0.151);
+    background-color: rgba(0, 0, 0, 0.185);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.101);
     border-radius: 50%;
     border: 0;
     width: 4em;

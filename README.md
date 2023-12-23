@@ -1,7 +1,7 @@
 
 # 🎨 Obras Recomendadas
 
-Um site web que apresenta várias obras recomendadas a serem consumidas. Essa página se concentra no poder da JavaScript de fazer um slider funcionar.
+Um site web que apresenta várias obras recomendadas a serem consumidas. Essa página se concentra no poder da JavaScript de fazer um slider funcionar. Ademais, é possível mudar de slide clicando em uma das setas ou na bolinha da posição desejada.
 
 
 ## ✅ Demonstração
@@ -22,6 +22,8 @@ Um site web que apresenta várias obras recomendadas a serem consumidas. Essa p�
 - Efeitos de "hover" e de "active" nos elementos clicáveis
 - Fazer desaparecer e aparecer informações conforme o slide vai sendo selecionado
 - Efeito de aparecimento suave aos slides
+- Setas direita e esquerda de voltar ou avançar a ordem de slide mostrado
+- Bolinhas indicadoras de ordem de slide mostrado
 
 ## 🌈 Documentação de cores
 
