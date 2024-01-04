@@ -10,11 +10,12 @@
 body {
     font: 2vw Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: var(--cinza);
     background-image: url(../imagens/fundo\ branco.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin: 0;
+    animation: aparecer 0.5s ease-out ;
 }
 :root {
     --cinza: #dbdbdb;
@@ -23,6 +24,17 @@ body {
     --azul-clara: #406E8E;
     --vermelha: #F9627D;
 }
+
+/* Efeito de aparecer página inteira */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /* O corpo do site */
 
@@ -139,7 +151,7 @@ body {
     object-fit: cover;
     position: absolute;
     left: 0;
-    transition: .2s ease-in;
+    transition: .4s ease-out;
 }
 .foto img:hover, 
 .foto source:hover {
