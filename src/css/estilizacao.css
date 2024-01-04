@@ -162,14 +162,18 @@ body {
     cursor: pointer;
     transition: .4s ease;
 }
-.indicacoes .bolinha:not(.selecionada):hover {
+.indicacoes .bolinha:not(.selecionada):focus-visible {
+    outline-color: var(--azul-clara);
+}
+.indicacoes .bolinha:not(.selecionada):hover,
+.indicacoes .bolinha:not(.selecionada):focus-visible {
     background-color: var(--azul-clara);
 }
 .indicacoes .bolinha.selecionada {
     background-color: var(--azul-neutra);
 }
 .indicacoes .bolinha:focus-visible {
-    outline: auto;
+    outline-color: var(--azul-escura);
 }
 
 /* O rodapé do site */
@@ -185,6 +189,10 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition-duration: .6s;
+}
+.rodape a:focus-visible {
+    outline: auto;
+    padding: 0.1em;
 }
 .rodape a:hover,
 .rodape a:focus-visible {
