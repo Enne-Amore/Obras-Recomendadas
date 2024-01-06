@@ -35,6 +35,23 @@ body {
     }
 }
 
+/* Estilização da barrinha de rolagem */
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--azul-clara);
+    border-radius: 1em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--azul-neutra);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--azul-escura);
+}
 
 /* O corpo do site */
 
@@ -95,6 +112,7 @@ body {
     text-align: justify;
     margin: auto 3%;
     font-weight: normal;
+    line-height: 1.5em;
 }
 .botoes {
     display: flex;
