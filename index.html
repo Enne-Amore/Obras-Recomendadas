@@ -17,110 +17,40 @@
 
     <main class="conteudo">
         
-        <article class="slide fade aparecida">
+        <article class="slide" id="slide">
             <section class="retangulo">
                 <h2 class="titulo-da-obra" id="titulo-da-obra"> Gris </h2>
+                
                 <p class="descricao-da-obra" id="descricao-da-obra">
                     Um jogo de apenas uma pessoa o qual é calmo e relaxante, além de passar mensagens de maneira subtendida sobre superação da morte de alguém importante pra nós.
                 </p>
+                
                 <div class="botoes">
-                    <button type="button" class="circulo" onclick="plusSlides(-1)"> &#8920; </button>
-                    <button type="button" class="circulo" onclick="plusSlides(1)"> &#8921; </button>
-                </div>
-            </section>
-            <aside class="foto">
-                <img src="src/imagens/gris.jpg" alt="Gris">
-            </aside>
-        </article>
+                    <!-- Botão de voltar -->
+                    <button type="button" class="circulo" id="voltar"> &#8920; </button>
 
-        <article class="slide fade">
-            <section class="retangulo">
-                <h2 class="titulo-da-obra" id="titulo-da-obra"> Life is strange </h2>
-                <p class="descricao-da-obra" id="descricao-da-obra">
-                    Siga a história de Max Caulfield, uma estudante de fotografia que descobre ser capaz de rebobinar o tempo ao salvar a melhor amiga, Chloe Price. As duas logo começam a investigar o desaparecimento misterioso da amiga e também estudante Rachel Amber, e desvendam o lado sombrio da vida em Arcadia Bay.
-                </p>
-                <div class="botoes">
-                    <button type="button" class="circulo" onclick="plusSlides(-1)"> &#8920; </button>
-                    <button type="button" class="circulo" onclick="plusSlides(1)"> &#8921; </button>
+                    <!-- Botão de avançar -->
+                    <button type="button" class="circulo" id="avancar"> &#8921; </button>
                 </div>
             </section>
-            <picture class="foto">
-                <source media="(max-width: 1200px)" srcset="src/imagens/life-is-strange.jpg" type="image/jpg">
-                <img src="src/imagens/life is strange.jpg" alt="Life is strange">
-            </picture>
-        </article>
-
-        <article class="slide fade">
-            <section class="retangulo">
-                <h2 class="titulo-da-obra" id="titulo-da-obra"> Chucky </h2>
-                <p class="descricao-da-obra" id="descricao-da-obra">
-                    Um boneco assassino está atrás de novas vítimas e de vingança contra todo mundo que o atrapalhou de alguma forma em seus planos malignos. E com toda certeza, não há apenas um boneco assassino, e não vai ficar nada barato pra ninguém.
-                </p>
-                <div class="botoes">
-                    <button type="button" class="circulo" onclick="plusSlides(-1)"> &#8920; </button>
-                    <button type="button" class="circulo" onclick="plusSlides(1)"> &#8921; </button>
-                </div>
-            </section>
-            <aside class="foto">
-                <img src="src/imagens/chucky.jpg" alt="Chucky: a série">
-            </aside>
-        </article>
-
-        <article class="slide fade">
-            <section class="retangulo">
-                <h2 class="titulo-da-obra" id="titulo-da-obra"> The owl house </h2>
-                <p class="descricao-da-obra" id="descricao-da-obra">
-                    Uma série de comédia e que acompanha Luz, uma adolescente humana auto-confiante que acidentalmente se depara com um portal para as ilhas ferventes. Lá ela faz amizade com uma bruxa rebelde, Eda, e um guerreiro adoravelmente pequeno, King. Apesar de não ter habilidades mágicas, Luz persegue o seu sonho de se tornar uma bruxa, sendo aprendiz de Eda na Casa da Coruja e, finalmente, encontra uma nova família num ambiente improvável.
-                </p>
-                <div class="botoes">
-                    <button type="button" class="circulo" onclick="plusSlides(-1)"> &#8920; </button>
-                    <button type="button" class="circulo" onclick="plusSlides(1)"> &#8921; </button>
-                </div>
-            </section>
-            <picture class="foto">
-                <source media="(max-width: 1200px)" srcset="src/imagens/a-casa-coruja.jpeg" type="image/jpg">
-                <img src="src/imagens/a casa coruja.jpeg" alt="The owl house">
-            </picture>
-        </article>
-
-        <article class="slide fade">
-            <section class="retangulo">
-                <h2 class="titulo-da-obra" id="titulo-da-obra"> Trem infinito </h2>
-                <p class="descricao-da-obra" id="descricao-da-obra"> Tulip, uma menina precoce, se vê presa em um trem repleto de universos infinitos, com a ajuda de alguns amigos, ela precisará encontrar o caminho de volta para casa, enquanto vive perigosas aventuras. A série se passa nesse trem aparentemente interminável viajando por uma paisagem árida e os vagões dele contêm uma variedade de ambientes bizarros e fantásticos.
-                </p>
-                <div class="botoes">
-                    <button type="button" class="circulo" onclick="plusSlides(-1)"> &#8920; </button>
-                    <button type="button" class="circulo" onclick="plusSlides(1)"> &#8921; </button>
-                </div>
-            </section>
-            <aside class="foto">
-                <img src="src/imagens/trem infinito.webp" alt="Trem infinito">
-            </aside>
-        </article>
-
-        <article class="slide fade">
-            <section class="retangulo">
-                <h2 class="titulo-da-obra" id="titulo-da-obra"> Umibe no étranger </h2>
-                <p class="descricao-da-obra" id="descricao-da-obra">
-                    Em uma ilha na costa de Okinawa, dois jovens se encontram em uma praia. Shun está interessado em Mio Chibana, um estudante sombrio do ensino médio, e começa a paquerar com ele. Dia após dia, os dois se aproximam, mas, de repente, Mio decide deixar a ilha. Três anos depois, Mio volta e se aproxima de Shun com muito amor. Entretanto, diante da perspectiva de finalmente se tornar amante de Mio, Shun não pode dar o primeiro passo para o compromisso...
-                </p>
-                <div class="botoes">
-                    <button type="button" class="circulo" onclick="plusSlides(-1)"> &#8920; </button>
-                    <button type="button" class="circulo" onclick="plusSlides(1)"> &#8921; </button>
-                </div>
-            </section>
-            <aside class="foto">
-                <img src="src/imagens/umibe no étranger.jpeg" alt="Umibe no étranger">
-            </aside>
+            
+            <figure class="foto">
+                <img src="src/imagens/gris.jpg" alt="Gris" id="capa-img">
+            </figure>
         </article>
 
         <div class="indicacoes">
-            <button type="button" class="bolinha selecionada" onclick="currentSlide(1)"></button>
-            <button type="button" class="bolinha" onclick="currentSlide(2)"></button>
-            <button type="button" class="bolinha" onclick="currentSlide(3)"></button>
-            <button type="button" class="bolinha" onclick="currentSlide(4)"></button>
-            <button type="button" class="bolinha" onclick="currentSlide(5)"></button>
-            <button type="button" class="bolinha" onclick="currentSlide(6)"></button>
+            <button type="button" data-name="Gris" data-description="Um jogo de apenas uma pessoa o qual é calmo e relaxante, além de passar mensagens de maneira subtendida sobre superação da morte de alguém importante pra nós." data-img="src/imagens/gris.jpg" data-alt="Capa do jogo Gris" class="bolinha selecionada"></button>
+            
+            <button type="button" data-name="Life is strange" data-description="Siga a história de Max Caulfield, uma estudante de fotografia que descobre ser capaz de rebobinar o tempo ao salvar a melhor amiga, Chloe Price. As duas logo começam a investigar o desaparecimento misterioso da amiga e também estudante Rachel Amber, e desvendam o lado sombrio da vida em Arcadia Bay." data-img="src/imagens/life is strange.jpg" data-alt="Capa do jogo Life is strange" class="bolinha"></button>
+            
+            <button type="button" data-name="Chucky" data-description="Um boneco assassino está atrás de novas vítimas e de vingança contra todo mundo que o atrapalhou de alguma forma em seus planos malignos. E com toda certeza, não há apenas um boneco assassino, e não vai ficar nada barato pra ninguém." data-img="src/imagens/chucky.jpg" data-alt="Chucky: a série" class="bolinha"></button>
+            
+            <button type="button" data-name="A Casa Coruja" data-description="Uma série de comédia e que acompanha Luz, uma adolescente humana auto-confiante que acidentalmente se depara com um portal para as ilhas ferventes. Lá ela faz amizade com uma bruxa rebelde, Eda, e um guerreiro adoravelmente pequeno, King. Apesar de não ter habilidades mágicas, Luz persegue o seu sonho de se tornar uma bruxa, sendo aprendiz de Eda na Casa da Coruja e, finalmente, encontra uma nova família num ambiente improvável." data-img="src/imagens/a casa coruja.jpeg" data-alt="Capa da série A Casa Coruja" class="bolinha"></button>
+            
+            <button type="button" data-name="Trem infinito" data-description="Tulip, uma menina precoce, se vê presa em um trem repleto de universos infinitos, com a ajuda de alguns amigos, ela precisará encontrar o caminho de volta para casa, enquanto vive perigosas aventuras. A série se passa nesse trem aparentemente interminável viajando por uma paisagem árida e os vagões dele contêm uma variedade de ambientes bizarros e fantásticos." data-img="src/imagens/trem infinito.webp" data-alt="Capa da série Trem Infinito" class="bolinha"></button>
+
+            <button type="button" data-name="Umibe no étranger" data-description="Em uma ilha na costa de Okinawa, dois jovens se encontram em uma praia. Shun está interessado em Mio Chibana, um estudante sombrio do ensino médio, e começa a paquerar com ele. Dia após dia, os dois se aproximam, mas, de repente, Mio decide deixar a ilha. Três anos depois, Mio volta e se aproxima de Shun com muito amor. Entretanto, diante da perspectiva de finalmente se tornar amante de Mio, Shun não pode dar o primeiro passo para o compromisso..." data-img="src/imagens/umibe no étranger.jpeg" data-alt="Capa do filme Umibe no étranger" class="bolinha"></button>
         </div>
     </main>
 

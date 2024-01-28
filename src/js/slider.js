@@ -1,48 +1,77 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const bolinhas = document.querySelectorAll('.bolinha')
+const voltarBotao = document.getElementById('voltar')
+const avancarBotao = document.getElementById('avancar')
+const slide = document.getElementById('slide')
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+bolinhas.forEach((bolinha) => {
+  bolinha.addEventListener('click', () => {
+    selecionarBolinha(bolinha)
+  })
+})
+
+voltarBotao.addEventListener('click', () => {
+  const indexAtual = encontrarIndex()
+  const novoIndex = (indexAtual - 1 + bolinhas.length) % bolinhas.length
+  inserirNovoIndex(novoIndex)
+})
+
+avancarBotao.addEventListener('click', () => {
+  const indexAtual = encontrarIndex()
+  const novoIndex = (indexAtual + 1) % bolinhas.length
+  inserirNovoIndex(novoIndex)
+})
+
+function inserirNovoIndex(novoIndex) {
+  const novaBolinha = bolinhas[novoIndex]
+  selecionarBolinha(novaBolinha)
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n)
+function encontrarIndex() {
+  const bolinhaSelecionada = document.querySelector('.selecionada')
+  const indexAtual = Array.from(bolinhas).indexOf(bolinhaSelecionada)
+  return indexAtual
 }
 
-function showSlides(n) {
-  // Declaração de variáveis
-  let slides = document.querySelectorAll(".slide");
-  const bolinhas = document.querySelectorAll(".bolinha")
-  
-  // Para voltar ao começo da imagem em telas menores
-  if (window.innerWidth < 600) {
-    window.scrollTo({top: 110, behavior: 'smooth'});
-  } else if (window.innerWidth < 1000) {
-    window.scrollTo({top: 250, behavior: 'smooth'});
-  } else if (window.innerWidth < 1200) {
-    window.scrollTo({top: 160, behavior: 'smooth'});
-  }
+function selecionarBolinha(bolinha) {
+  removerSelecaoDaBolinha()
 
-  // Remove a classe 'aparecida' de todas as folhas
-  slides.forEach((slide) => {
-    slide.classList.remove('aparecida')
-  })
+  // Desaparecimento
+  slide.style.display = 'none'
 
-  if (n > slides.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = slides.length
-  }
+  // Cor de bolinha selecionada
+  bolinha.classList.add('selecionada')
 
-  // Adiciona a classe 'aparecida' à folha correspondente
-  slides[slideIndex - 1].classList.add('aparecida')
+  // Troca de dados
+  trocarTitulo(bolinha)
+  trocarDescricao(bolinha)
+  trocarImg(bolinha)
 
-  // Remove a classe 'selecionada' de todas as bolinhas
-  bolinhas.forEach((bolinha) => {
-      bolinha.classList.remove('selecionada')
-  })
+  setTimeout(() => {
+    // Desaparecimento suave
+    slide.style.display = 'flex'
 
-  // Adiciona a classe 'selecionada' à bolinha correspondente
-  bolinhas[slideIndex - 1].classList.add('selecionada')
+    // Rolar tela
+    slide.scrollIntoView({ behavior: "smooth" })
+  }, 0)
+}
+
+function trocarImg(bolinha) {
+  const capaImg = document.querySelector('#capa-img')
+  capaImg.src = bolinha.getAttribute('data-img')
+  capaImg.alt = bolinha.getAttribute('data-alt')
+}
+
+function trocarDescricao(bolinha) {
+  const descricao = document.querySelector('#descricao-da-obra')
+  descricao.textContent = bolinha.getAttribute('data-description')
+}
+
+function trocarTitulo(bolinha) {
+  const titulo = document.querySelector('#titulo-da-obra')
+  titulo.textContent = bolinha.getAttribute('data-name')
+}
+
+function removerSelecaoDaBolinha() {
+  const bolinhaSelecionada = document.querySelector('.selecionada')
+  bolinhaSelecionada.classList.remove('selecionada')
 }
