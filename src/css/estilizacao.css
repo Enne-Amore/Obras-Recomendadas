@@ -1,7 +1,6 @@
 @charset 'UTF-8';
 
 /* A mente do site */
-
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +16,8 @@ body {
     background-size: cover;
     animation: aparecer 0.5s ease-out ;
 }
+
+/* Variáveis de cores */
 :root {
     --cinza: #dbdbdb;
     --azul-escura: #161925;
@@ -54,7 +55,6 @@ body {
 }
 
 /* O corpo do site */
-
 .cabecalho {
     font-size: 1.2em;
     text-transform: capitalize;
@@ -70,7 +70,6 @@ body {
 }
 
 /* O conteúdo do site */
-
 .conteudo {
     position: relative;
 }
