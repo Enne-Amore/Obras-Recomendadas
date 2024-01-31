@@ -23,6 +23,7 @@
     }
     .circulo {
         font-size: 1.6em;
+        padding: 0.5em 0.4em;
     }
     .foto {
         width: 80%;
@@ -62,7 +63,8 @@
         margin-top: 5%;
     }
     .circulo {
-        font-size: 1.8em;
+        font-size: 1.4em;
+        padding: 0.5em 0.4em;
     }
     .foto {
         width: 80%;

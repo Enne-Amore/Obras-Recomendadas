@@ -74,6 +74,11 @@ body {
     position: relative;
 }
 
+.slide-container {
+    min-height: 70vh;
+    max-height: max-content;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -88,7 +93,7 @@ body {
     margin-top: 4%;
     gap: 2%;
     color: white;
-    animation: fadeIn 1s ease-out;
+    animation: fadeIn .5s ease-out;
 }
 
 .retangulo {
@@ -131,7 +136,7 @@ body {
     width: max-content;
     height: max-content;
     font-size: 1em;
-    border-radius: 2em;
+    border-radius: 50%;
     transition-duration: .2s;
     position: relative;
     padding: 2.5% 2%;
