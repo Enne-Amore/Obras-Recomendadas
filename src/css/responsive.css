@@ -1,6 +1,6 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) and (orientation: portrait) {
     body {
-        font-size: 1em;
+        font-size: 4vw;
     }
     .cabecalho {
         font-size: 1.2em;
@@ -20,6 +20,7 @@
     }
     .retangulo .descricao-da-obra {
         margin-top: 5%;
+        font-size: 1.2em;
     }
     .circulo {
         font-size: 1.6em;
@@ -40,44 +41,24 @@
         height: 3em;
     }
 }
-@media screen and (min-width: 600px) and (max-width: 1200px){
-    body {
-        font-size: 2em;
-    }
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
     .cabecalho {
         margin-top: 4%;
-        padding: 4%;
+        padding: 2% 3%;
     }
-    .cabecalho h1 {
-        width: min-content;
+    
+    .slide-container {
+        min-height: 60vh;
+        max-height: max-content;
     }
-    .slide {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-    .retangulo {
-        width: 100%;
-    }
+
     .retangulo .descricao-da-obra {
-        margin-top: 5%;
+        font-size: 1.2em;
     }
-    .circulo {
-        font-size: 1.4em;
-        padding: 0.5em;
-    }
-    .foto {
-        width: 80%;
-    }
-    .foto img, .foto source {
-        position: relative;
-    }
-    .indicacoes {
-        gap: 4%;
-        margin: 5% 0 8%;
-    }
+
     .indicacoes .bolinha {
-        width: 6em;
-        height: 6em;
+        width: 3em;
+        height: 3em;
     }
 }

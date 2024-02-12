@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 /* A mente do site */
 * {
@@ -7,51 +7,9 @@
     box-sizing: border-box;
 }
 body {
-    font: 2vw Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: var(--cinza);
-    background-image: url(../imagens/fundo\ branco.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url(../imagens/fundo\ branco.jpg) no-repeat fixed;
     background-size: cover;
-    animation: aparecer 0.5s ease-out ;
-}
-
-/* Variáveis de cores */
-:root {
-    --cinza: #dbdbdb;
-    --azul-escura: #161925;
-    --azul-neutra: #23395B;
-    --azul-clara: #406E8E;
-    --vermelha: #F9627D;
-}
-
-/* Efeito de aparecer página inteira */
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Estilização da barrinha de rolagem */
-::-webkit-scrollbar {
-    width: auto;
-}
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background-color: var(--azul-clara);
-    border-radius: 1em;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--azul-neutra);
-}
-::-webkit-scrollbar-thumb:active {
-    background-color: var(--azul-escura);
 }
 
 /* O corpo do site */
@@ -67,6 +25,7 @@ body {
     margin-top: 2%;
     border-radius: 1em;
     padding: 1%;
+    animation: cima 1s ease-out;
 }
 
 /* O conteúdo do site */
@@ -78,22 +37,13 @@ body {
     min-height: 70vh;
     max-height: max-content;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 .slide {
     display: flex;
     margin: 0 5%;
     margin-top: 4%;
     gap: 2%;
     color: white;
-    animation: fadeIn .5s ease-out;
+    animation: aparecer .5s ease-out;
 }
 
 .retangulo {
@@ -102,6 +52,7 @@ body {
     background-color: var(--azul-clara);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.178);
     border-radius: 2em;
+    animation: esquerda 1s ease-out;
 }
 .retangulo .titulo-da-obra {
     margin: 0% auto 3%;
@@ -128,7 +79,6 @@ body {
 }
 
 .circulo {
-    border: 0;
     display: flex;
     align-items: center;
     background-color: white;
@@ -141,7 +91,6 @@ body {
     position: relative;
     padding: 2.5% 2%;
     font-weight: bold;
-    cursor: pointer;
 }
 .circulo:focus {
     outline: 0;
@@ -166,6 +115,7 @@ body {
     height: auto;
     position: relative;
     overflow: hidden;
+    animation: direita 1s ease-out;
 }
 .foto img, 
 .foto source {
@@ -185,17 +135,17 @@ body {
 .indicacoes {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2%;
     margin: 2% 0 3%;
+    animation: baixo 1s ease-out;
 }
 .indicacoes .bolinha {
     background-color: rgba(0, 0, 0, 0.185);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.101);
     border-radius: 50%;
-    border: 0;
     width: 4em;
     height: 4em;
-    cursor: pointer;
     transition: .4s ease;
 }
 .indicacoes .bolinha:not(.selecionada):focus-visible {
@@ -219,10 +169,10 @@ body {
     color: white;
     padding: 1em;
     font-size: 1.2em;
+    animation: baixo 1s ease-out;
 }
 .rodape a {
     color: var(--azul-escura);
-    text-decoration: none;
     font-weight: bold;
     transition-duration: .6s;
 }

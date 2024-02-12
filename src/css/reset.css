@@ -1,0 +1,114 @@
+/* Reset das tags */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 2vw var(--padrao);
+    background-color: var(--cinza);
+    color: white;
+    animation: aparecer .5s ease-out;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* Variáveis de cores */
+:root {
+    --cinza: #dbdbdb;
+    --azul-escura: #161925;
+    --azul-neutra: #23395B;
+    --azul-clara: #406E8E;
+    --vermelha: #F9627D;
+    --padrao: Arial, Helvetica, sans-serif;
+}
+
+/* Estilização da barrinha de rolagem */
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--azul-clara);
+    border-radius: 1em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--azul-neutra);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--azul-escura);
+}
+
+/* Animações dos elementos */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes esquerda {
+    from {
+        opacity: 0;
+        translate: -10vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes direita {
+    from {
+        opacity: 0;
+        translate: 10vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes baixo {
+    from {
+        opacity: 0;
+        translate: 0 10vh;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes cima {
+    from {
+        opacity: 0;
+        translate: 0 -2vh;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
