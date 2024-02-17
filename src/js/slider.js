@@ -52,6 +52,10 @@ function selecionarBolinha(bolinha) {
 
     // Rolar tela
     slide.scrollIntoView({ behavior: "smooth" })
+
+    // Acelerar animação
+    document.querySelector('.retangulo').style.animationDuration = '.5s'
+    document.querySelector('.foto').style.animationDuration = '.5s'
   }, 0)
 }
 

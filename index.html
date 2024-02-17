@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obras Recomendadas</title>
+    <title> Obras Recomendadas </title>
     <link rel="shortcut icon" href="src/imagens/icone.png" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/reset.css">
@@ -15,46 +15,53 @@
 <body>
 
     <header class="cabecalho">
-        <h1>Obras recomendadas</h1>
+        <h1> Obras recomendadas </h1>
     </header>
 
     <main class="conteudo">
         
         <div class="slide-container">
+            <!-- Slide Selecionado -->
             <article class="slide" id="slide">
                 <section class="retangulo">
+                    <!-- Título -->
                     <h2 class="titulo-da-obra" id="titulo-da-obra"> Gris </h2>
             
+                    <!-- Descrição -->
                     <p class="descricao-da-obra" id="descricao-da-obra">
                         Um jogo de apenas uma pessoa o qual é calmo e relaxante, além de passar mensagens de maneira subtendida sobre superação da morte de alguém importante pra nós.
                     </p>
             
+                    <!-- Botões -->
                     <div class="botoes">
-                        <!-- Botão de voltar -->
-                        <button type="button" class="circulo" id="voltar"> &#8920; </button>
-                        <!-- Botão de avançar -->
-                        <button type="button" class="circulo" id="avancar"> &#8921; </button>
+                        <!-- Voltar -->
+                        <button type="button" aria-label="Anterior" class="circulo" id="voltar"> &#8920; </button>
+
+                        <!-- Avançar -->
+                        <button type="button" aria-label="Próximo" class="circulo" id="avancar"> &#8921; </button>
                     </div>
                 </section>
             
+                <!-- Capa De Imagem -->
                 <figure class="foto">
                     <img src="src/imagens/gris.jpg" alt="Gris" id="capa-img">
                 </figure>
             </article>
         </div>
 
+        <!-- Opções De Slide -->
         <div class="indicacoes">
-            <button type="button" data-name="Gris" data-description="Um jogo de apenas uma pessoa o qual é calmo e relaxante, além de passar mensagens de maneira subtendida sobre superação da morte de alguém importante pra nós." data-img="src/imagens/gris.jpg" data-alt="Capa do jogo Gris" class="bolinha selecionada"></button>
+            <button type="button" aria-label="1ª Opção" data-name="Gris" data-description="Um jogo de apenas uma pessoa o qual é calmo e relaxante, além de passar mensagens de maneira subtendida sobre superação da morte de alguém importante pra nós." data-img="src/imagens/gris.jpg" data-alt="Capa do jogo Gris" class="bolinha selecionada"></button>
             
-            <button type="button" data-name="Life is strange" data-description="Siga a história de Max Caulfield, uma estudante de fotografia que descobre ser capaz de rebobinar o tempo ao salvar a melhor amiga, Chloe Price. As duas logo começam a investigar o desaparecimento misterioso da amiga e também estudante Rachel Amber, e desvendam o lado sombrio da vida em Arcadia Bay." data-img="src/imagens/life is strange.jpg" data-alt="Capa do jogo Life is strange" class="bolinha"></button>
+            <button type="button" aria-label="2ª Opção" data-name="Life is strange" data-description="Siga a história de Max Caulfield, uma estudante de fotografia que descobre ser capaz de rebobinar o tempo ao salvar a melhor amiga, Chloe Price. As duas logo começam a investigar o desaparecimento misterioso da amiga e também estudante Rachel Amber, e desvendam o lado sombrio da vida em Arcadia Bay." data-img="src/imagens/life is strange.jpg" data-alt="Capa do jogo Life is strange" class="bolinha"></button>
             
-            <button type="button" data-name="Chucky" data-description="Um boneco assassino está atrás de novas vítimas e de vingança contra todo mundo que o atrapalhou de alguma forma em seus planos malignos. E com toda certeza, não há apenas um boneco assassino, e não vai ficar nada barato pra ninguém." data-img="src/imagens/chucky.jpg" data-alt="Chucky: a série" class="bolinha"></button>
+            <button type="button" aria-label="3ª Opção" data-name="Chucky" data-description="Um boneco assassino está atrás de novas vítimas e de vingança contra todo mundo que o atrapalhou de alguma forma em seus planos malignos. E com toda certeza, não há apenas um boneco assassino, e não vai ficar nada barato pra ninguém." data-img="src/imagens/chucky.jpg" data-alt="Chucky: a série" class="bolinha"></button>
             
-            <button type="button" data-name="A Casa Coruja" data-description="Uma série de comédia e que acompanha Luz, uma adolescente humana auto-confiante que acidentalmente se depara com um portal para as ilhas ferventes. Lá ela faz amizade com uma bruxa rebelde, Eda, e um guerreiro adoravelmente pequeno, King. Apesar de não ter habilidades mágicas, Luz persegue o seu sonho de se tornar uma bruxa, sendo aprendiz de Eda na Casa da Coruja e, finalmente, encontra uma nova família num ambiente improvável." data-img="src/imagens/a casa coruja.jpeg" data-alt="Capa da série A Casa Coruja" class="bolinha"></button>
+            <button type="button" aria-label="4ª Opção" data-name="A Casa Coruja" data-description="Uma série de comédia e que acompanha Luz, uma adolescente humana auto-confiante que acidentalmente se depara com um portal para as ilhas ferventes. Lá ela faz amizade com uma bruxa rebelde, Eda, e um guerreiro adoravelmente pequeno, King. Apesar de não ter habilidades mágicas, Luz persegue o seu sonho de se tornar uma bruxa, sendo aprendiz de Eda na Casa da Coruja e, finalmente, encontra uma nova família num ambiente improvável." data-img="src/imagens/a casa coruja.jpeg" data-alt="Capa da série A Casa Coruja" class="bolinha"></button>
             
-            <button type="button" data-name="Trem infinito" data-description="Tulip, uma menina precoce, se vê presa em um trem repleto de universos infinitos, com a ajuda de alguns amigos, ela precisará encontrar o caminho de volta para casa, enquanto vive perigosas aventuras. A série se passa nesse trem aparentemente interminável viajando por uma paisagem árida e os vagões dele contêm uma variedade de ambientes bizarros e fantásticos." data-img="src/imagens/trem infinito.webp" data-alt="Capa da série Trem Infinito" class="bolinha"></button>
+            <button type="button" aria-label="5ª Opção" data-name="Trem infinito" data-description="Tulip, uma menina precoce, se vê presa em um trem repleto de universos infinitos, com a ajuda de alguns amigos, ela precisará encontrar o caminho de volta para casa, enquanto vive perigosas aventuras. A série se passa nesse trem aparentemente interminável viajando por uma paisagem árida e os vagões dele contêm uma variedade de ambientes bizarros e fantásticos." data-img="src/imagens/trem infinito.webp" data-alt="Capa da série Trem Infinito" class="bolinha"></button>
 
-            <button type="button" data-name="Umibe no étranger" data-description="Em uma ilha na costa de Okinawa, dois jovens se encontram em uma praia. Shun está interessado em Mio Chibana, um estudante sombrio do ensino médio, e começa a paquerar com ele. Dia após dia, os dois se aproximam, mas, de repente, Mio decide deixar a ilha. Três anos depois, Mio volta e se aproxima de Shun com muito amor. Entretanto, diante da perspectiva de finalmente se tornar amante de Mio, Shun não pode dar o primeiro passo para o compromisso..." data-img="src/imagens/umibe no étranger.jpeg" data-alt="Capa do filme Umibe no étranger" class="bolinha"></button>
+            <button type="button" aria-label="6ª Opção" data-name="Umibe no étranger" data-description="Em uma ilha na costa de Okinawa, dois jovens se encontram em uma praia. Shun está interessado em Mio Chibana, um estudante sombrio do ensino médio, e começa a paquerar com ele. Dia após dia, os dois se aproximam, mas, de repente, Mio decide deixar a ilha. Três anos depois, Mio volta e se aproxima de Shun com muito amor. Entretanto, diante da perspectiva de finalmente se tornar amante de Mio, Shun não pode dar o primeiro passo para o compromisso..." data-img="src/imagens/umibe no étranger.jpeg" data-alt="Capa do filme Umibe no étranger" class="bolinha"></button>
         </div>
     </main>
 
